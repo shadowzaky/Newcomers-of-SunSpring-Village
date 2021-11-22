@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Sea Level
+    uniqueID: 360652753
+    locked: 0
+  - name: Ground Level
+    uniqueID: 3171845289
+    locked: 0
+  - name: Ground Level Decoration
+    uniqueID: 3216892255
+    locked: 0
+  - name: OnGround Level
+    uniqueID: 135341741
+    locked: 0
+  - name: OnGround Level2
+    uniqueID: 1762476875
+    locked: 0
+  - name: GameUI
+    uniqueID: 3706454079
+    locked: 0
