@@ -60,7 +60,9 @@ public class PlayerMovement : MonoBehaviour
         {
             try {
                 character.SetDirection(input);
-            } catch (Exception e) {
+            } 
+            catch (Exception)
+            {
                 //Do nothing
             }
         }

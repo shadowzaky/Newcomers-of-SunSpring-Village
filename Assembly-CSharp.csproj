@@ -80,7 +80,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterEquipment.cs" />
      <Compile Include="Assets\Scripts\Interactable.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\SoloState.cs" />
-     <Compile Include="Assets\Scripts\CharacterInteraction.cs" />
+     <Compile Include="Assets\Scripts\CharacterInteractionController.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\IconCollection.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterControls.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemWorkspace.cs" />
@@ -124,6 +124,7 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
      <Compile Include="Assets\Scripts\HighlightController.cs" />
+     <Compile Include="Assets\Scripts\LootContainerInteract.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />

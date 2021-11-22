@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public Sprite originalSprite;
-    public Sprite interactedSprite;
-
-    void Update()
+    public virtual void Interact()
     {
-        if (Input.GetKey(KeyCode.E))
-        {
-            
-            GetComponent<SpriteRenderer>().sprite = interactedSprite;
-        }
+
     }
 }
