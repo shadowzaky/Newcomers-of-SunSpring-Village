@@ -36,10 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\HeroEditor4D\Common\Editor\LayerManagerEditor.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\Editor\IconCollectionEditor.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\Editor\SpriteCollectionEditor.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\Editor\LayerShiftEditor.cs" />
+     <Compile Include="Assets\HeroEditor4D\Common\Editor\LayerManagerEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -278,25 +278,34 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="HeroEditor4D.Common">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\HeroEditor4D\Common\HeroEditor4D.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\StandaloneFileBrowser\Plugins\Ookii.Dialogs.dll</HintPath>
     </Reference>
     <Reference Include="HeroEditor4D.Common.Editor">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\HeroEditor4D\Common\Editor\HeroEditor4D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.render-pipelines.core@10.7.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\StandaloneFileBrowser\Plugins\System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -667,11 +676,17 @@
     <Reference Include="Unity.2D.PixelPerfect">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -685,6 +700,9 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.IK.Editor">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
@@ -697,8 +715,8 @@
     <Reference Include="Unity.2D.Path.Editor">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -709,14 +727,26 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
@@ -726,6 +756,12 @@
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -741,6 +777,9 @@
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
