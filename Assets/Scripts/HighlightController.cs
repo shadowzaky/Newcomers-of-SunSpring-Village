@@ -13,9 +13,9 @@ public class HighlightController : MonoBehaviour
     {
         if (currentTarget != target)
         {
-            currentTarget = target;
             Vector3 position = target.transform.position;
             Highlight(position);
+            currentTarget = target;
         }
     }
 
