@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{b68dd68d-0c16-13ad-b356-bba2c81b5645}</ProjectGuid>
+    <ProjectGuid>{2ed7ebe6-dfcb-65b7-25ce-ab7998461cd3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>OEBIF</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -36,108 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\InventoryItem.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\NavigateButton.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\AnimationManager.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\LayerShift.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\BasicSample.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\ItemIcon.cs" />
-     <Compile Include="Assets\Scripts\ToolsCharacterController.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemRarity.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterSetup.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileTextMultiple.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\ItemParams.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\IStandaloneFileBrowser.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ElementId.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileText.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\Equipment.cs" />
-     <Compile Include="Assets\Scripts\CameraMovement.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemMaterial.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\DontDestroyOnLoad.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Extensions.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\ElementComponents.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterSerializer.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemTag.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\WarehouseBase.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileText.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Item.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemInfo.cs" />
-     <Compile Include="Assets\Scripts\HighlightController.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterExtensions.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\CharacterEditor.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemType.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterState.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\StateHandler.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\CharacterInventorySetup.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorMode.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\Character.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemSlot.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileImage.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventory.cs" />
-     <Compile Include="Assets\Scripts\PlayerPositionPrefs.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Springs\ScaleSpring.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterEquipment.cs" />
-     <Compile Include="Assets\Scripts\Interactable.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\SoloState.cs" />
-     <Compile Include="Assets\Scripts\CharacterInteractionController.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\IconCollection.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterControls.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemWorkspace.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\LayerManager.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\InventoryBase.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterAppearance.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Extensions.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\AnimationEvents.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\AnchorManager.cs" />
-     <Compile Include="Assets\Scripts\ToolHit.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorSlider.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\Character4D.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\SpriteSheetCapture.cs" />
-     <Compile Include="Assets\Scripts\DayTimeController.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterAppearance.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserEditor.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\SortingOrderExample.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\ItemCollection.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorJoystick.cs" />
-     <Compile Include="Assets\Scripts\TreeCuttable.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventoryFilter.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\SpriteSequenceCapture.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Property.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemClass.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\LocalizedValue.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowser.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Modifier.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\CaptureOptions.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileImage.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Springs\SpringBase.cs" />
-     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
-     <Compile Include="Assets\Scripts\RoomMove.cs" />
-     <Compile Include="Assets\Scripts\LootContainerInteract.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ModificatorType.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\PaletteGradient.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\ShopBase.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\PropertyId.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\RainbowGenerator.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorPicker.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\StandaloneFilePicker.cs" />
-     <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\TalkInteractable.cs" />
-     <Compile Include="Assets\Scripts\GameItem.cs" />
-     <Compile Include="Assets\Scripts\GameItemContainer.cs" />
-     <Compile Include="Assets\Scripts\InventoryPanel.cs" />
-     <Compile Include="Assets\Scripts\InventoryButton.cs" />
-     <Compile Include="Assets\Scripts\InventoryController.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\PickUpItem.cs" />
-     <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
-     <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
-     <None Include="Assets\HeroEditor4D\Notice.txt" />
-     <None Include="Assets\HeroEditor4D\Common\Animation\Bonus (Right Side Only)\Readme.txt" />
-     <None Include="Assets\HeroEditor4D\Extensions\EpicHeroes\Readme.txt" />
+     <Compile Include="Assets\OutlineEffect\OutlineEffect\LinkedSet.cs" />
+     <Compile Include="Assets\OutlineEffect\OutlineEffect\Outline.cs" />
+     <Compile Include="Assets\OutlineEffect\OutlineEffect\OutlineEffect.cs" />
+     <None Include="Assets\OutlineEffect\OutlineEffect\Resources\OutlineBufferShader.shader" />
+     <None Include="Assets\OutlineEffect\OutlineEffect.asmdef" />
+     <None Include="Assets\OutlineEffect\OutlineEffect\Resources\OutlineShader.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -360,11 +264,44 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UWP.Extensions">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
     <Reference Include="HeroEditor4D.Common">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\HeroEditor4D\Common\HeroEditor4D.Common.dll</HintPath>
     </Reference>
     <Reference Include="Ookii.Dialogs">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\StandaloneFileBrowser\Plugins\Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="HeroEditor4D.Common.Editor">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\HeroEditor4D\Common\Editor\HeroEditor4D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.render-pipelines.core@10.7.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -717,125 +654,11 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

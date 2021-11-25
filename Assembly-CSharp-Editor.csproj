@@ -40,6 +40,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\Editor\SpriteCollectionEditor.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\Editor\LayerShiftEditor.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\Editor\LayerManagerEditor.cs" />
+     <Compile Include="Assets\Editor\ItemContainerEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
