@@ -9,12 +9,21 @@ public class PickUpItem : MonoBehaviour
     public float pickUpDistance = 2f;
     public float ttl = 50f;
 
-    public GameItem item;
-    public int quantity = 1;
+    GameItem item;
+    int quantity = 1;
 
     void Awake()
     {
         player = GameManager.instance.player.transform;
+    }
+
+    public void Set(GameItem item, int quantity)
+    {
+        this.item = item;
+        this.quantity = quantity;
+
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = item.icon;
     }
 
     void Update()

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryButton : MonoBehaviour
+public class InventoryButton : MonoBehaviour, IPointerClickHandler
 {
     public Image icon;
     public Text text;
@@ -37,5 +38,12 @@ public class InventoryButton : MonoBehaviour
 
         text.text = "";
         text.gameObject.SetActive(false);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        GameItemContainer inventory = GameManager.instance.inventoryContainer;
+        GameManager.instance.dragAndDropController.OnClick(inventory.slots[myIndex]);
+        transform.parent.GetComponent<InventoryPanel>().Show();
     }
 }

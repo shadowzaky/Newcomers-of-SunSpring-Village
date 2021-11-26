@@ -208,6 +208,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40a6187af18134f0d91b1ad3b9111f77, type: 3}
+--- !u!114 &3774114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4474113980260922023, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}
+  m_PrefabInstance: {fileID: 7572870881755164567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9ac86028332a04da89ebed5c592b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &71198246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2580611941283806040, guid: 581ce7dd5bffd4541aaf03fe71692b9e, type: 3}
@@ -70138,6 +70149,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1981770081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8067280562437104457, guid: 581ce7dd5bffd4541aaf03fe71692b9e, type: 3}
+  m_PrefabInstance: {fileID: 1458077857141523680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1999587346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70776,6 +70792,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -36
       objectReference: {fileID: 0}
+    - target: {fileID: 8067280562437104457, guid: 581ce7dd5bffd4541aaf03fe71692b9e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581ce7dd5bffd4541aaf03fe71692b9e, type: 3}
 --- !u!1001 &3046106651609465844
@@ -71029,6 +71049,14 @@ PrefabInstance:
       propertyPath: inventoryContainer
       value: 
       objectReference: {fileID: 11400000, guid: e07565f3f0aa63e4eafd7e4c7d4e7acc, type: 2}
+    - target: {fileID: 2967127166097316771, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}
+      propertyPath: dragAndDropController
+      value: 
+      objectReference: {fileID: 3774114}
+    - target: {fileID: 4474113980260922023, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}
+      propertyPath: dragItemIcon
+      value: 
+      objectReference: {fileID: 1981770081}
     - target: {fileID: 7572870882807389601, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}
       propertyPath: highlighter
       value: 
