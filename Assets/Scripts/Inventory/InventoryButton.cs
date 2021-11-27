@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class InventoryButton : MonoBehaviour, IPointerClickHandler
 {
+    public Image hightlight;
     public Image icon;
     public Text text;
+
 
     int myIndex;
 
@@ -20,7 +22,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
     {
         icon.gameObject.SetActive(true);
         icon.sprite = itemSlot.item.icon;
-        if (itemSlot.item.stackable) 
+        if (itemSlot.item.stackable)
         {
             text.gameObject.SetActive(true);
             text.text = itemSlot.count.ToString();
@@ -42,8 +44,12 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        GameItemContainer inventory = GameManager.instance.inventoryContainer;
-        GameManager.instance.dragAndDropController.OnClick(inventory.slots[myIndex]);
-        transform.parent.GetComponent<InventoryPanel>().Show();
+        ItemPanel itemPanel = transform.parent.GetComponent<ItemPanel>();
+        itemPanel.OnClick(myIndex);
+    }
+
+    public void Hightlight(bool shouldHighlight)
+    {
+        hightlight.gameObject.SetActive(shouldHighlight);
     }
 }

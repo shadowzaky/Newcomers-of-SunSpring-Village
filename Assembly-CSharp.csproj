@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scripts\Character\PlayerMovement.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Springs\ScaleSpring.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterEquipment.cs" />
+     <Compile Include="Assets\Scripts\ItemSpawnManager.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryPanel.cs" />
      <Compile Include="Assets\Scripts\Interactable\Interactable.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\SoloState.cs" />
@@ -134,7 +135,9 @@
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\ItemSpawnManager.cs" />
+     <Compile Include="Assets\Scripts\Character\ToolbarController.cs" />
+     <Compile Include="Assets\Scripts\Inventory\ItemPanel.cs" />
+     <Compile Include="Assets\Scripts\Inventory\ItemToolbarPanel.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />
