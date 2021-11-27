@@ -107,6 +107,7 @@
      <Compile Include="Assets\Scripts\Interactable\TreeCuttable.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventoryFilter.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\SpriteSequenceCapture.cs" />
+     <Compile Include="Assets\Scripts\Inventory\ItemPanel.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Property.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemDragAndDropController.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemClass.cs" />
@@ -115,11 +116,13 @@
      <Compile Include="Assets\Scripts\Inventory\InventoryController.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowser.cs" />
      <Compile Include="Assets\Scripts\Character\PickUpItem.cs" />
+     <Compile Include="Assets\Scripts\Inventory\ItemToolbarPanel.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Modifier.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\CaptureOptions.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryButton.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileImage.cs" />
+     <Compile Include="Assets\Scripts\Character\ToolbarController.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Springs\SpringBase.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
      <Compile Include="Assets\Scripts\RoomMove.cs" />
@@ -135,9 +138,9 @@
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\Character\ToolbarController.cs" />
-     <Compile Include="Assets\Scripts\Inventory\ItemPanel.cs" />
-     <Compile Include="Assets\Scripts\Inventory\ItemToolbarPanel.cs" />
+     <Compile Include="Assets\Scripts\Tilemap\TileData.cs" />
+     <Compile Include="Assets\Scripts\TileMapReadController.cs" />
+     <Compile Include="Assets\Scripts\Tilemap\TilemapMarkerManager.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />

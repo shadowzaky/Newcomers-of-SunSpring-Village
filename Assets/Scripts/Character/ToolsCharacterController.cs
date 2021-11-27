@@ -8,6 +8,8 @@ public class ToolsCharacterController : MonoBehaviour
 {
     public float offsetDistance = 1f;
     public float sizeOfInteractableArea = 1.2f;
+    public TilemapMarkerManager markerManager;
+    public TileMapReadController tileMapReadController;
 
     Character4D character;
     Rigidbody2D body2d;
@@ -20,10 +22,17 @@ public class ToolsCharacterController : MonoBehaviour
 
     void Update()
     {
+        MarkTile();
         if (Input.GetMouseButton(0))
         {
             UseTool();
         }
+    }
+
+    private void MarkTile()
+    {
+        Vector3Int gridPosition = tileMapReadController.GetGridPosition(Input.mousePosition, true);
+        markerManager.markedCellPosition = gridPosition;
     }
 
     private void UseTool()
