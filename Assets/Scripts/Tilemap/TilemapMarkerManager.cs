@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,11 +11,21 @@ public class TilemapMarkerManager : MonoBehaviour
 
     public Vector3Int markedCellPosition;
     Vector3Int oldCellPosition;
+    bool show;
 
     void Update()
     {
-        targetTilemap.SetTile(oldCellPosition, null);
-        targetTilemap.SetTile(markedCellPosition, tile);
-        oldCellPosition = markedCellPosition;
+        if (show)
+        {
+            targetTilemap.SetTile(oldCellPosition, null);
+            targetTilemap.SetTile(markedCellPosition, tile);
+            oldCellPosition = markedCellPosition;
+        }
+    }
+
+    internal void Show(bool selectable)
+    {
+        show = selectable;
+        targetTilemap.gameObject.SetActive(show);
     }
 }

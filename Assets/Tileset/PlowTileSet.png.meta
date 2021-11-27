@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -7438543812128446970
     second: PlowTileSet_1
+  - first:
+      213: 3956042825553616544
+    second: PlowTileSet_2
+  - first:
+      213: -3063659551049550871
+    second: PlowTileSet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -170,6 +176,48 @@ TextureImporter:
       bones: []
       spriteID: 60667ef50dbf4c890800000000000000
       internalID: -7438543812128446970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlowTileSet_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae1b556dffa6e630800000000000000
+      internalID: 3956042825553616544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlowTileSet_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e375faced1bb75d0800000000000000
+      internalID: -3063659551049550871
       vertices: []
       indices: 
       edges: []

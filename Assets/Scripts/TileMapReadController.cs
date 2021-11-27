@@ -38,9 +38,7 @@ public class TileMapReadController : MonoBehaviour
 
     public TileBase GetTileBase(Vector3Int gridPosition)
     {
-        TileBase tile = tilemap.GetTile(gridPosition);
-
-        return null;
+        return tilemap.GetTile(gridPosition);
     }
 
     public TileData GetTileData(TileBase tileBase)

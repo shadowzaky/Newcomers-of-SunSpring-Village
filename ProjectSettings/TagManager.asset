@@ -56,6 +56,9 @@ TagManager:
   - name: OnGround Level2
     uniqueID: 1762476875
     locked: 0
+  - name: Highlight
+    uniqueID: 748427851
+    locked: 0
   - name: GameUI
     uniqueID: 3706454079
     locked: 0

@@ -73,6 +73,7 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\CharacterInventorySetup.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorMode.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\Character.cs" />
+     <Compile Include="Assets\Scripts\Tilemap\TilemapMarkerManager.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemSlot.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileImage.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventory.cs" />
@@ -89,6 +90,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterControls.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemWorkspace.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\LayerManager.cs" />
+     <Compile Include="Assets\Scripts\TileMapReadController.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\InventoryBase.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterAppearance.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Extensions.cs" />
@@ -104,6 +106,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\SortingOrderExample.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\ItemCollection.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorJoystick.cs" />
+     <Compile Include="Assets\Scripts\Tilemap\TileData.cs" />
      <Compile Include="Assets\Scripts\Interactable\TreeCuttable.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventoryFilter.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\SpriteSequenceCapture.cs" />
@@ -138,9 +141,7 @@
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\Tilemap\TileData.cs" />
-     <Compile Include="Assets\Scripts\TileMapReadController.cs" />
-     <Compile Include="Assets\Scripts\Tilemap\TilemapMarkerManager.cs" />
+     <Compile Include="Assets\Scripts\CropsManager.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />
