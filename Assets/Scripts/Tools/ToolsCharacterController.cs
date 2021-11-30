@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.HeroEditor4D.Common.CharacterScripts;
+using HeroEditor4D.Common.Enums;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -14,6 +15,7 @@ public class ToolsCharacterController : MonoBehaviour
     public float maxDistance = 2.5f;
     public CropsManager cropsManager;
     public TileData plowableTile;
+    public ToolbarController toolbarController;
 
     Character4D character;
     Rigidbody2D body2d;
@@ -24,6 +26,7 @@ public class ToolsCharacterController : MonoBehaviour
     {
         character = GetComponent<Character4D>();
         body2d = GetComponent<Rigidbody2D>();
+        toolbarController = GetComponent<ToolbarController>();
     }
 
     void Update()
@@ -61,17 +64,14 @@ public class ToolsCharacterController : MonoBehaviour
     private bool UseToolWorld()
     {
         Vector2 position = body2d.position + character.Direction * offsetDistance;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
-        foreach (Collider2D collider in colliders)
+        GameItem item = toolbarController.GetItem;
+        if (item == null || item.onAction == null)
         {
-            ToolHit hit = collider.GetComponent<ToolHit>();
-            if (hit != null)
-            {
-                hit.Hit();
-                return true;
-            }
+            return false;
         }
-        return false;
+
+        character.AnimationManager.Slash2H();
+        return item.onAction.OnApply(position);
     }
 
     private void UseToolGrid()

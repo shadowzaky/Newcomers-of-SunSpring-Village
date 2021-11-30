@@ -43,7 +43,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\LayerShift.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\BasicSample.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\ItemIcon.cs" />
-     <Compile Include="Assets\Scripts\Character\ToolsCharacterController.cs" />
+     <Compile Include="Assets\Scripts\Tools\ToolsCharacterController.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemRarity.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterSetup.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
@@ -96,7 +96,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Extensions.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\AnimationEvents.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\AnchorManager.cs" />
-     <Compile Include="Assets\Scripts\Character\ToolHit.cs" />
+     <Compile Include="Assets\Scripts\Tools\ToolHit.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorSlider.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\Character4D.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\SpriteSheetCapture.cs" />
@@ -107,7 +107,7 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\ItemCollection.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorJoystick.cs" />
      <Compile Include="Assets\Scripts\Tilemap\TileData.cs" />
-     <Compile Include="Assets\Scripts\Interactable\TreeCuttable.cs" />
+     <Compile Include="Assets\Scripts\Interactable\ResourceNode.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventoryFilter.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\SpriteSequenceCapture.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemPanel.cs" />
@@ -125,7 +125,8 @@
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\CaptureOptions.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryButton.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileImage.cs" />
-     <Compile Include="Assets\Scripts\Character\ToolbarController.cs" />
+     <Compile Include="Assets\Scripts\Inventory\ToolbarController.cs" />
+     <Compile Include="Assets\Scripts\CropsManager.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Springs\SpringBase.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
      <Compile Include="Assets\Scripts\RoomMove.cs" />
@@ -141,7 +142,8 @@
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\CropsManager.cs" />
+     <Compile Include="Assets\Scripts\Tools\ToolAction.cs" />
+     <Compile Include="Assets\Scripts\Tools\GatherResourceNode.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />

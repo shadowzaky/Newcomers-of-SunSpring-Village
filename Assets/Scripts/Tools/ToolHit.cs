@@ -8,4 +8,9 @@ public class ToolHit : Interactable
     {
         
     }
+
+    public virtual bool CanBeHit(List<ResourceNodeType> canBeHit)
+    {
+        return true;
+    }
 }

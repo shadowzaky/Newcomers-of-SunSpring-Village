@@ -6,10 +6,18 @@ using UnityEngine;
 public class ToolbarController : MonoBehaviour
 {
     public int toolbarSize = 12;
-    
+
     int selectedTool = 0;
 
     public Action<int> onChange;
+
+    public GameItem GetItem
+    {
+        get
+        {
+            return GameManager.instance.inventoryContainer.slots[selectedTool].item;
+        }
+    }
 
     void Update()
     {
@@ -27,6 +35,7 @@ public class ToolbarController : MonoBehaviour
                 selectedTool = selectedTool >= 0 ? selectedTool : toolbarSize - 1;
             }
             onChange?.Invoke(selectedTool);
+            GetItem.onAction.OnToolbarSelected();
         }
     }
 

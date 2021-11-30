@@ -8,4 +8,5 @@ public class GameItem : ScriptableObject
     public string Name;
     public bool stackable;
     public Sprite icon;
+    public ToolAction onAction;
 }
