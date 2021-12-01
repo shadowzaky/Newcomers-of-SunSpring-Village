@@ -10,7 +10,7 @@ public class ToolAction : ScriptableObject
         return true;
     }
 
-    public virtual void OnToolbarSelected()
+    public virtual void OnToolbarSelectedChanged(GameItem gameItem, bool selected = true)
     {
         Debug.LogWarning("OnToolbarSelected is not implemented");
     }

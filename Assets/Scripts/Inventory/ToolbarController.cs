@@ -15,8 +15,13 @@ public class ToolbarController : MonoBehaviour
     {
         get
         {
-            return GameManager.instance.inventoryContainer.slots[selectedTool].item;
+            return GetItemAtIndex(selectedTool);
         }
+    }
+
+    private GameItem GetItemAtIndex(int index)
+    {
+        return GameManager.instance.inventoryContainer.slots[index].item;
     }
 
     void Update()
@@ -24,6 +29,7 @@ public class ToolbarController : MonoBehaviour
         float delta = Input.mouseScrollDelta.y;
         if (delta != 0)
         {
+            var previousSelectedTool = selectedTool;
             if (delta > 0)
             {
                 selectedTool++;
@@ -35,7 +41,12 @@ public class ToolbarController : MonoBehaviour
                 selectedTool = selectedTool >= 0 ? selectedTool : toolbarSize - 1;
             }
             onChange?.Invoke(selectedTool);
-            GetItem.onAction.OnToolbarSelected();
+            GetItem?.onAction?.OnToolbarSelectedChanged(GetItem);
+            var previousSelectedGameItem = GetItemAtIndex(previousSelectedTool);
+            if (previousSelectedGameItem != null)
+            {
+                previousSelectedGameItem.onAction?.OnToolbarSelectedChanged(previousSelectedGameItem, false);
+            }
         }
     }
 
