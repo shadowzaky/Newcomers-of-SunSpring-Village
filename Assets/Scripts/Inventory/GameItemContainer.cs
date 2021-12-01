@@ -61,4 +61,35 @@ public class GameItemContainer : ScriptableObject
             }
         }
     }
+
+    public void Remove(GameItem itemToRemove, int quantity = 1)
+    {
+        if (itemToRemove.stackable)
+        {
+            ItemSlot slot = slots.Find(x => x.item == itemToRemove);
+            if (slot == null)
+            {
+                return;
+            }
+            slot.count -= quantity;
+            if (slot.count <= 0)
+            {
+                slot.Clear();
+            }
+        }
+        else
+        {
+            while (quantity > 0)
+            {
+                quantity--;
+
+                ItemSlot slot = slots.Find(x => x.item == itemToRemove);
+                if (slot == null)
+                {
+                    break;
+                }
+                slot.Clear();
+            }
+        }
+    }
 }

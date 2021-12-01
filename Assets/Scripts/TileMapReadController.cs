@@ -7,19 +7,7 @@ public class TileMapReadController : MonoBehaviour
 {
     public Tilemap tilemap;
     public List<TileData> tileDatas;
-
-    Dictionary<TileBase, TileData> dataFromTiles;
-    void Start()
-    {
-        dataFromTiles = new Dictionary<TileBase, TileData>();
-        foreach (TileData tileData in tileDatas)
-        {
-            foreach (TileBase tileBase in tileData.tiles)
-            {
-                dataFromTiles.Add(tileBase, tileData);
-            }
-        }
-    }
+    public CropsManager cropsManager;
 
     public Vector3Int GetGridPosition(Vector2 position, bool mousePosition)
     {
@@ -39,10 +27,5 @@ public class TileMapReadController : MonoBehaviour
     public TileBase GetTileBase(Vector3Int gridPosition)
     {
         return tilemap.GetTile(gridPosition);
-    }
-
-    public TileData GetTileData(TileBase tileBase)
-    {
-        return dataFromTiles[tileBase];
     }
 }

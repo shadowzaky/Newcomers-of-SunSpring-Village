@@ -108,7 +108,6 @@
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\SortingOrderExample.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\ItemCollection.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorJoystick.cs" />
-     <Compile Include="Assets\Scripts\Tilemap\TileData.cs" />
      <Compile Include="Assets\Scripts\Interactable\ResourceNode.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventoryFilter.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\SpriteSequenceCapture.cs" />
@@ -144,6 +143,8 @@
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
+     <Compile Include="Assets\Scripts\PlowTile.cs" />
+     <Compile Include="Assets\Scripts\SeedTile.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />

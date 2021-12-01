@@ -13,8 +13,6 @@ public class ToolsCharacterController : MonoBehaviour
     public TilemapMarkerManager markerManager;
     public TileMapReadController tileMapReadController;
     public float maxDistance = 2.5f;
-    public CropsManager cropsManager;
-    public TileData plowableTile;
     public ToolbarController toolbarController;
 
     Character4D character;
@@ -70,28 +68,29 @@ public class ToolsCharacterController : MonoBehaviour
             return false;
         }
 
-        character.AnimationManager.Slash1H();
-        return item.onAction.OnApply(position);
+        bool completed = item.onAction.OnApply(position);
+        HandleActionPerformed(completed, item);
+        return completed;
     }
 
     private void UseToolGrid()
     {
         if (selectable)
         {
-            TileBase tileBase = tileMapReadController.GetTileBase(selectedTilePosition);
-            if (tileBase != null)
+            GameItem item = toolbarController.GetItem;
+            if (item == null || item.onTileMapAction == null)
             {
-                TileData tileData = tileMapReadController.GetTileData(tileBase);
-                if (tileData != plowableTile) { return; }
-                if (cropsManager.Check(selectedTilePosition))
-                {
-                    cropsManager.Seed(selectedTilePosition);
-                }
-                else
-                {
-                    cropsManager.Plow(selectedTilePosition);
-                }
+                return;
             }
+
+            bool completed = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController);
+            HandleActionPerformed(completed, item);
         }
+    }
+
+    private void HandleActionPerformed(bool wasActionPerformed, GameItem item)
+    {
+        character.AnimationManager.Slash1H();
+        item.onTileMapAction?.OnItemUsed(item, GameManager.instance.inventoryContainer);
     }
 }
