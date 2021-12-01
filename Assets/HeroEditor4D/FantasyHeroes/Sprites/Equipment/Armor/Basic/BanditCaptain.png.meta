@@ -152,6 +152,8 @@ TextureImporter:
   isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -161,8 +163,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -183,9 +185,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
@@ -891,6 +896,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      BackHead: 21300036
+      FrontArmR: 21300026
+      BackHandL: 21300072
+      LeftFingersR: 21300084
+      BackFingersR: 21300020
+      FrontBody: 21300028
+      BackArmL: 21300040
+      LeftLegR: 21300054
+      LeftBody: 21300052
+      BackArmR: 21300044
+      LeftHandL: 21300010
+      FrontSleeveL: 21300018
+      FrontArmL: 21300030
+      FrontLegR: 21300032
+      FrontHandR: 21300068
+      FrontLegL: 21300060
+      BackFingersL: 21300074
+      BackLegL: 21300046
+      BackHandR: 21300008
+      LeftArmR: 21300050
+      FrontHandL: 21300006
+      LeftSleeveL: 21300082
+      LeftArmL: 21300058
+      LeftHandR: 21300016
+      FrontHead: 21300024
+      BackBody: 21300042
+      FrontSleeveR: 21300070
+      LeftLegL: 21300056
+      BackLegR: 21300048
+      LeftHead: 21300038
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -354,6 +354,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1633,6 +1634,62 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tileset_Ground_16: -372187778804107543
+      Tileset_Ground_37: -5622471764229402995
+      Tileset_Ground_52: 984915542979911713
+      Tileset_Ground_42: 6259848909196288456
+      Tileset_Ground_22: 342129687681548167
+      Tileset_Ground_51: 4868273613094200505
+      Tileset_Ground_12: -2045597773275167908
+      Tileset_Ground_24: 678216562427439604
+      Tileset_Ground_7: -7423542184419424118
+      Tileset_Ground_25: 5599037837425697938
+      Tileset_Ground_46: 5293439593214690971
+      Tileset_Ground_33: -8021426931375948572
+      Tileset_Ground_50: -913100676746166947
+      Tileset_Ground_45: 7321745979468943254
+      Tileset_Ground_9: -4421036558824547706
+      Tileset_Ground_32: 7406042630833168935
+      Tileset_Ground_23: -2066154747345058032
+      Tileset_Ground_31: 8746903793656407937
+      Tileset_Ground_44: -8562715021512119668
+      Tileset_Ground_49: -6071193335120535057
+      Tileset_Ground_18: 4680426339043166659
+      Tileset_Ground_34: 7863072452011212046
+      Tileset_Ground_30: 3591799735823888680
+      Tileset_Ground_0: 174563878813406555
+      Tileset_Ground_54: -5531568094293638584
+      Tileset_Ground_8: 7496179969454722130
+      Tileset_Ground_10: 1967683097423283854
+      Tileset_Ground_14: -8259483994505968010
+      Tileset_Ground_2: 7851500125361547508
+      Tileset_Ground_1: -5567904629385750496
+      Tileset_Ground_17: 5920932640774531144
+      Tileset_Ground_36: -4266846769343607580
+      Tileset_Ground_20: -1278763373808909831
+      Tileset_Ground_29: 8669961313998280503
+      Tileset_Ground_41: 4244803300647185477
+      Tileset_Ground_15: 1113351260292932169
+      Tileset_Ground_4: -6296274034798851926
+      Tileset_Ground_11: 8400759061456303269
+      Tileset_Ground_43: 4578249982292780305
+      Tileset_Ground_13: 8592410170907675937
+      Tileset_Ground_19: -6700197698846007987
+      Tileset_Ground_38: -4972897389334255463
+      Tileset_Ground_39: -3950119759792474056
+      Tileset_Ground_5: 1767474535287356676
+      Tileset_Ground_26: 2407116113768182471
+      Tileset_Ground_21: 8359180064547406660
+      Tileset_Ground_27: 4842369457145987051
+      Tileset_Ground_47: -3224778985427943118
+      Tileset_Ground_53: -5820139855018433528
+      Tileset_Ground_48: -2011484839382859918
+      Tileset_Ground_28: -6322576357215751127
+      Tileset_Ground_40: -4020626263836359927
+      Tileset_Ground_35: -326794328095349800
+      Tileset_Ground_3: -5971591253037105612
+      Tileset_Ground_6: 5272091033911225074
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

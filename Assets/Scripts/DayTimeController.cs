@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Experimental.Rendering.Universal;
+
 using System;
 
 public class DayTimeController : MonoBehaviour
@@ -13,8 +13,8 @@ public class DayTimeController : MonoBehaviour
     public Color dayLightColor = Color.white;
     public Text text;
     public float timeScale = 60f;
-    public Light2D gobalLight;
-    public Light2D playerLight;
+    public UnityEngine.Rendering.Universal.Light2D gobalLight;
+    public UnityEngine.Rendering.Universal.Light2D playerLight;
     public float playerNightLightIntensity = 0.6f;
 
     float time;
