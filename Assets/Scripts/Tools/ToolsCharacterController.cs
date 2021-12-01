@@ -70,7 +70,7 @@ public class ToolsCharacterController : MonoBehaviour
             return false;
         }
 
-        character.AnimationManager.Slash2H();
+        character.AnimationManager.Slash1H();
         return item.onAction.OnApply(position);
     }
 
