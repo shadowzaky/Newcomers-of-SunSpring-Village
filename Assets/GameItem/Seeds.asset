@@ -18,3 +18,4 @@ MonoBehaviour:
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: c1612408a70f6bd4483cfe6b5cd69268, type: 2}
   onItemUsed: {fileID: 11400000, guid: c1612408a70f6bd4483cfe6b5cd69268, type: 2}
+  crop: {fileID: 11400000, guid: 2cf94d009dec2334586f11ea8e94a235, type: 2}

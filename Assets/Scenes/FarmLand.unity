@@ -65952,6 +65952,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a51be6627229a94cbedea4770ccc9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1195930167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7572870882807389603, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}
+  m_PrefabInstance: {fileID: 7572870881755164567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78eb180bf2fd2454cb5683ea55813a81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1286593691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1063387739299351, guid: 6be0f3f1382a0bb4eb84b0eeb0015e4d, type: 3}
@@ -70865,6 +70876,10 @@ PrefabInstance:
       propertyPath: character4D
       value: 
       objectReference: {fileID: 1619067008}
+    - target: {fileID: 2967127166097316771, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}
+      propertyPath: timeController
+      value: 
+      objectReference: {fileID: 1195930167}
     - target: {fileID: 2967127166097316771, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}
       propertyPath: inventoryContainer
       value: 

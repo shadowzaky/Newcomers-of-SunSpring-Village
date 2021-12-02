@@ -3,22 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class Crop
+public class CropTile
 {
-
+    public int growTimer;
+    public Crop crop;
 }
 
-public class CropsManager : MonoBehaviour
+public class CropsManager : TimeAgent
 {
     public TileBase plowed;
     public TileBase seeded;
     public Tilemap cropTilemap;
 
-    Dictionary<Vector3Int, Crop> crops;
+    Dictionary<Vector3Int, CropTile> crops;
 
     void Start()
     {
-        crops = new Dictionary<Vector3Int, Crop>();
+        Init();
+        crops = new Dictionary<Vector3Int, CropTile>();
+        onTimeTick += Tick;
+    }
+
+    public void Tick()
+    {
+        foreach (CropTile cropTile in crops.Values)
+        {
+            if (cropTile.crop != null)
+            {
+                cropTile.growTimer += 1;
+                if (cropTile.growTimer >= cropTile.crop.timeToGrow)
+                {
+                    Debug.Log("I'm done growing");
+                    cropTile.crop = null;
+                }
+            }
+        }
     }
 
     public bool Check(Vector3Int position)
@@ -39,14 +58,16 @@ public class CropsManager : MonoBehaviour
 
     private void CreatedPlowedTile(Vector3Int position)
     {
-        Crop crop = new Crop();
+        CropTile crop = new CropTile();
         crops.Add(position, crop);
 
         cropTilemap.SetTile(position, plowed);
     }
 
-    public void Seed(Vector3Int position)
+    public void Seed(Vector3Int position, Crop toSeed)
     {
         cropTilemap.SetTile(position, seeded);
+
+        crops[position].crop = toSeed;
     }
 }

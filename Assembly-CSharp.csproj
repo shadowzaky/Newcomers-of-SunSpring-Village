@@ -145,6 +145,9 @@
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
      <Compile Include="Assets\Scripts\PlowTile.cs" />
      <Compile Include="Assets\Scripts\SeedTile.cs" />
+     <Compile Include="Assets\Scripts\TimeAgent.cs" />
+     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
+     <Compile Include="Assets\Scripts\Crop.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />
