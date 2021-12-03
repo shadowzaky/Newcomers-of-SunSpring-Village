@@ -6,7 +6,9 @@ using UnityEngine.Tilemaps;
 public class CropTile
 {
     public int growTimer;
+    public int growthStage;
     public Crop crop;
+    public SpriteRenderer spriteRenderer;
 }
 
 public class CropsManager : TimeAgent
@@ -14,6 +16,7 @@ public class CropsManager : TimeAgent
     public TileBase plowed;
     public TileBase seeded;
     public Tilemap cropTilemap;
+    public GameObject cropsSpritePrefab;
 
     Dictionary<Vector3Int, CropTile> crops;
 
@@ -31,6 +34,13 @@ public class CropsManager : TimeAgent
             if (cropTile.crop != null)
             {
                 cropTile.growTimer += 1;
+                if (cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growthStage])
+                {
+                    cropTile.spriteRenderer.gameObject.SetActive(true);
+                    cropTile.spriteRenderer.sprite = cropTile.crop.sprites[cropTile.growthStage];
+                    cropTile.growthStage++;
+                }
+
                 if (cropTile.growTimer >= cropTile.crop.timeToGrow)
                 {
                     Debug.Log("I'm done growing");
@@ -60,6 +70,12 @@ public class CropsManager : TimeAgent
     {
         CropTile crop = new CropTile();
         crops.Add(position, crop);
+
+        GameObject go = Instantiate(cropsSpritePrefab);
+        go.transform.position = cropTilemap.GetCellCenterLocal(position);
+        go.transform.position -= Vector3.forward * 0.01f;
+        go.SetActive(false);
+        crop.spriteRenderer = go.GetComponent<SpriteRenderer>();
 
         cropTilemap.SetTile(position, plowed);
     }

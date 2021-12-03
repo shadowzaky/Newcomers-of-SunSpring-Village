@@ -70968,5 +70968,9 @@ PrefabInstance:
       propertyPath: cropTilemap
       value: 
       objectReference: {fileID: 1653235188}
+    - target: {fileID: 9015080893637427322, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}
+      propertyPath: cropsSpritePrefab
+      value: 
+      objectReference: {fileID: 6672555834355984366, guid: 0fd9fe500efec894f9c50cdb3f78c797, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8b5badfa9047be4a9f7d5cd6292a5e7, type: 3}

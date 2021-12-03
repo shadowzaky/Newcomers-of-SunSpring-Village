@@ -48,6 +48,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterSetup.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileTextMultiple.cs" />
+     <Compile Include="Assets\Scripts\TimeAgent.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\ItemParams.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\IStandaloneFileBrowser.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ElementId.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemMaterial.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\DontDestroyOnLoad.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Extensions.cs" />
+     <Compile Include="Assets\Scripts\Crop.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\ElementComponents.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterSerializer.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemTag.cs" />
@@ -80,6 +82,7 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventory.cs" />
      <Compile Include="Assets\Scripts\Character\PlayerPositionPrefs.cs" />
      <Compile Include="Assets\Scripts\Character\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PlowTile.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Springs\ScaleSpring.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterEquipment.cs" />
      <Compile Include="Assets\Scripts\ItemSpawnManager.cs" />
@@ -89,6 +92,7 @@
      <Compile Include="Assets\Scripts\Character\CharacterInteractionController.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\IconCollection.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterControls.cs" />
+     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemWorkspace.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\LayerManager.cs" />
      <Compile Include="Assets\Scripts\TileMapReadController.cs" />
@@ -115,6 +119,7 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Property.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemDragAndDropController.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemClass.cs" />
+     <Compile Include="Assets\Scripts\SeedTile.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\LocalizedValue.cs" />
      <Compile Include="Assets\Scripts\Interactable\TalkInteractable.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryController.cs" />
@@ -143,11 +148,6 @@
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\PlowTile.cs" />
-     <Compile Include="Assets\Scripts\SeedTile.cs" />
-     <Compile Include="Assets\Scripts\TimeAgent.cs" />
-     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
-     <Compile Include="Assets\Scripts\Crop.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />
