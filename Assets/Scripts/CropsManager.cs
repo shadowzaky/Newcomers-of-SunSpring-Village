@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,25 @@ public class CropTile
     public int growthStage;
     public Crop crop;
     public SpriteRenderer spriteRenderer;
+    public Vector3Int position;
+    public float damage;
+    public bool completed
+    {
+        get
+        {
+            if (crop == null) { return false; }
+            return growTimer >= crop.timeToGrow;
+        }
+    }
+
+    internal void Harvested()
+    {
+        growTimer = 0;
+        growthStage = 0;
+        damage = 0;
+        crop = null;
+        spriteRenderer.gameObject.SetActive(false);
+    }
 }
 
 public class CropsManager : TimeAgent
@@ -33,18 +53,21 @@ public class CropsManager : TimeAgent
         {
             if (cropTile.crop != null)
             {
-                cropTile.growTimer += 1;
-                if (cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growthStage])
+                cropTile.damage += 0.02f;
+                if (cropTile.damage > 1f)
                 {
-                    cropTile.spriteRenderer.gameObject.SetActive(true);
-                    cropTile.spriteRenderer.sprite = cropTile.crop.sprites[cropTile.growthStage];
-                    cropTile.growthStage++;
+                    cropTile.Harvested();
                 }
-
-                if (cropTile.growTimer >= cropTile.crop.timeToGrow)
+                else if (!cropTile.completed)
                 {
-                    Debug.Log("I'm done growing");
-                    cropTile.crop = null;
+                    cropTile.growTimer += 1;
+                    cropTilemap.SetTile(cropTile.position, plowed);
+                    if (cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growthStage])
+                    {
+                        cropTile.spriteRenderer.gameObject.SetActive(true);
+                        cropTile.spriteRenderer.sprite = cropTile.crop.sprites[cropTile.growthStage];
+                        cropTile.growthStage++;
+                    }
                 }
             }
         }
@@ -69,6 +92,7 @@ public class CropsManager : TimeAgent
     private void CreatedPlowedTile(Vector3Int position)
     {
         CropTile crop = new CropTile();
+        crop.position = position;
         crops.Add(position, crop);
 
         GameObject go = Instantiate(cropsSpritePrefab);
@@ -85,5 +109,18 @@ public class CropsManager : TimeAgent
         cropTilemap.SetTile(position, seeded);
 
         crops[position].crop = toSeed;
+    }
+
+    public void PickUp(Vector3Int gridPosition)
+    {
+        if (crops.ContainsKey(gridPosition) == false) { return; }
+
+        CropTile cropTile = crops[gridPosition];
+        if (cropTile.completed)
+        {
+            ItemSpawnManager.instance.SpawnItem(cropTilemap.GetCellCenterLocal(gridPosition), cropTile.crop.yield, cropTile.crop.quantity);
+
+            cropTile.Harvested();
+        }
     }
 }

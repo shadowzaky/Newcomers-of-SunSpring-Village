@@ -11,7 +11,7 @@ public enum ResourceNodeType
     Ore
 }
 
-[CreateAssetMenu(menuName = "Data/Tool action/Gather Resource Node")]
+[CreateAssetMenu(menuName = "Data/Tool Action/Gather Resource Node")]
 public class GatherResourceNode : ToolAction
 {
     public float sizeOfInteractableArea = 1f;

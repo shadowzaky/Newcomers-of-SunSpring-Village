@@ -66463,7 +66463,8 @@ MonoBehaviour:
   markerManager: {fileID: 1022298595}
   tileMapReadController: {fileID: 1089959681}
   maxDistance: 2.5
-  toolbarController: {fileID: 0}
+  toolbarController: {fileID: 1619067000}
+  onTilePickUp: {fileID: 11400000, guid: 7029c48fa762a9441b2c56158363309e, type: 2}
 --- !u!114 &1619067008 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114216052855127813, guid: 40a6187af18134f0d91b1ad3b9111f77, type: 3}

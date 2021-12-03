@@ -148,6 +148,7 @@
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
+     <Compile Include="Assets\Scripts\TilePickUpAction.cs" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
      <None Include="Assets\HeroEditor4D\Common\Newtonsoft\LICENSE.txt" />
      <None Include="Assets\HeroEditor4D\Notice.txt" />

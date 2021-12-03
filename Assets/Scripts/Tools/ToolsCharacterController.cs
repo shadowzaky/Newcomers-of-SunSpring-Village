@@ -14,6 +14,7 @@ public class ToolsCharacterController : MonoBehaviour
     public TileMapReadController tileMapReadController;
     public float maxDistance = 2.5f;
     public ToolbarController toolbarController;
+    public ToolAction onTilePickUp;
 
     Character4D character;
     Rigidbody2D body2d;
@@ -78,13 +79,28 @@ public class ToolsCharacterController : MonoBehaviour
         if (selectable)
         {
             GameItem item = toolbarController.GetItem;
-            if (item == null || item.onTileMapAction == null)
+            if (item == null)
             {
-                return;
+                PickUpTile();
             }
+            else
+            {
+                if (item.onTileMapAction == null)
+                {
+                    return;
+                }
 
-            bool completed = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController, item);
-            HandleActionPerformed(completed, item);
+                bool completed = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController, item);
+                HandleActionPerformed(completed, item);
+            }
+        }
+    }
+
+    private void PickUpTile()
+    {
+        if (onTilePickUp != null)
+        {
+            onTilePickUp.OnApplyToTileMap(selectedTilePosition, tileMapReadController, null);
         }
     }
 
