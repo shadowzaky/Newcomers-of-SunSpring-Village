@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class TalkInteractable : Interactable
 {
+    public DialogueContainer dialogue;
     public override void Interact()
     {
-        Debug.Log("You talked with me");
+        GameManager.instance.dialogueSystem.Initialize(dialogue);
     }
 }
