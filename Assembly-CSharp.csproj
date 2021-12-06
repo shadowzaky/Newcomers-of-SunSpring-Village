@@ -111,6 +111,7 @@
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserEditor.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\SortingOrderExample.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\ItemCollection.cs" />
+     <Compile Include="Assets\Scripts\DialogueSystem.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorJoystick.cs" />
      <Compile Include="Assets\Scripts\Interactable\ResourceNode.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventoryFilter.cs" />
@@ -140,6 +141,7 @@
      <Compile Include="Assets\Scripts\Interactable\LootContainerInteract.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ModificatorType.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\PaletteGradient.cs" />
+     <Compile Include="Assets\Scripts\Actor.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\ShopBase.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\PropertyId.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\RainbowGenerator.cs" />
@@ -148,10 +150,11 @@
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\StandaloneFilePicker.cs" />
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
-     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\Actor.cs" />
      <Compile Include="Assets\Scripts\DialogueContainer.cs" />
-     <Compile Include="Assets\Scripts\DialogueSystem.cs" />
+     <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
+     <Compile Include="Assets\Scripts\Transition.cs" />
+     <Compile Include="Assets\Scripts\TransitionArea.cs" />
+     <Compile Include="Assets\Scripts\GameSceneManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
