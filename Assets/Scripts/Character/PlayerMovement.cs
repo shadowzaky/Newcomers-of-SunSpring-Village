@@ -1,11 +1,9 @@
 using System;
 using Assets.HeroEditor4D.Common.CharacterScripts;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Camera mainCamera;
     public float moveSpeed = 5f;
     Character4D character;
     Rigidbody2D rb;
@@ -22,21 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
         character.AnimationManager.SetState(CharacterState.Idle);
         character.SetDirection(Vector2.down);
-        
-        LoadPreviousPlayerPosition();
-    }
-
-    void LoadPreviousPlayerPosition()
-    {
-        var sceneName = SceneManager.GetActiveScene().name;
-        var newPosition = PlayerPositionPrefs.RestoreCurrentPlayerPosition($"{sceneName}_RoomMove_PlayerPos");
-        if (newPosition != null)
-        {
-            Debug.Log("Matt loaded this = " + $"{sceneName}_RoomMove_PlayerPos");
-            var castedNewPosition = (Vector3)newPosition;
-            character.transform.position = castedNewPosition;
-            mainCamera.transform.position = new Vector3(castedNewPosition.x, castedNewPosition.y, -10);
-        }
     }
 
     void FixedUpdate()
@@ -91,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
             }
             input = input * moveSpeed * Time.deltaTime;
             rb.MovePosition(rb.transform.position + input);
-            //rb.transform.position = input;
             m_Moving = true;
         }
     }
