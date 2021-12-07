@@ -39,12 +39,14 @@
      <Compile Include="Assets\Scripts\Inventory\GameItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\InventoryItem.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\NavigateButton.cs" />
+     <Compile Include="Assets\Scripts\GameSceneManager.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\AnimationManager.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\LayerShift.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\BasicSample.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\ItemIcon.cs" />
      <Compile Include="Assets\Scripts\Tools\ToolsCharacterController.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemRarity.cs" />
+     <Compile Include="Assets\Scripts\Transition.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterSetup.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileTextMultiple.cs" />
@@ -126,6 +128,7 @@
      <Compile Include="Assets\Scripts\Inventory\InventoryController.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowser.cs" />
      <Compile Include="Assets\Scripts\Character\PickUpItem.cs" />
+     <Compile Include="Assets\Scripts\TransitionArea.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemToolbarPanel.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Modifier.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
@@ -152,9 +155,6 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
      <Compile Include="Assets\Scripts\DialogueContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\Transition.cs" />
-     <Compile Include="Assets\Scripts\TransitionArea.cs" />
-     <Compile Include="Assets\Scripts\GameSceneManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
