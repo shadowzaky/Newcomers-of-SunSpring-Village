@@ -36,6 +36,17 @@ public class CropsManager : TimeAgent
     public TileBase plowed;
     public TileBase seeded;
     public Tilemap cropTilemap;
+    Tilemap CropTilemap
+    {
+        get
+        {
+            if (cropTilemap == null)
+            {
+                cropTilemap = GameObject.Find("Tilemap_Crops")?.GetComponent<Tilemap>();
+            }
+            return cropTilemap;
+        }
+    }
     public GameObject cropsSpritePrefab;
 
     Dictionary<Vector3Int, CropTile> crops;
@@ -49,6 +60,8 @@ public class CropsManager : TimeAgent
 
     public void Tick()
     {
+        if (CropTilemap == null) { return; }
+
         foreach (CropTile cropTile in crops.Values)
         {
             if (cropTile.crop != null)
@@ -61,7 +74,7 @@ public class CropsManager : TimeAgent
                 else if (!cropTile.completed)
                 {
                     cropTile.growTimer += 1;
-                    cropTilemap.SetTile(cropTile.position, plowed);
+                    CropTilemap.SetTile(cropTile.position, plowed);
                     if (cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growthStage])
                     {
                         cropTile.spriteRenderer.gameObject.SetActive(true);
@@ -75,6 +88,7 @@ public class CropsManager : TimeAgent
 
     public bool Check(Vector3Int position)
     {
+        if (CropTilemap == null) { return false; }
         return crops.ContainsKey(position);
     }
 
@@ -91,34 +105,36 @@ public class CropsManager : TimeAgent
 
     private void CreatedPlowedTile(Vector3Int position)
     {
+        if (CropTilemap == null) { return; }
         CropTile crop = new CropTile();
         crop.position = position;
         crops.Add(position, crop);
 
         GameObject go = Instantiate(cropsSpritePrefab);
-        go.transform.position = cropTilemap.GetCellCenterLocal(position);
+        go.transform.position = CropTilemap.GetCellCenterLocal(position);
         go.transform.position -= Vector3.forward * 0.01f;
         go.SetActive(false);
         crop.spriteRenderer = go.GetComponent<SpriteRenderer>();
 
-        cropTilemap.SetTile(position, plowed);
+        CropTilemap.SetTile(position, plowed);
     }
 
     public void Seed(Vector3Int position, Crop toSeed)
     {
-        cropTilemap.SetTile(position, seeded);
+        if (CropTilemap == null) { return; }
+        CropTilemap.SetTile(position, seeded);
 
         crops[position].crop = toSeed;
     }
 
     public void PickUp(Vector3Int gridPosition)
     {
-        if (crops.ContainsKey(gridPosition) == false) { return; }
+        if (crops.ContainsKey(gridPosition) == false || CropTilemap == null) { return; }
 
         CropTile cropTile = crops[gridPosition];
         if (cropTile.completed)
         {
-            ItemSpawnManager.instance.SpawnItem(cropTilemap.GetCellCenterLocal(gridPosition), cropTile.crop.yield, cropTile.crop.quantity);
+            ItemSpawnManager.instance.SpawnItem(CropTilemap.GetCellCenterLocal(gridPosition), cropTile.crop.yield, cropTile.crop.quantity);
 
             cropTile.Harvested();
         }

@@ -11,6 +11,15 @@ public class TileMapReadController : MonoBehaviour
 
     public Vector3Int GetGridPosition(Vector2 position, bool mousePosition)
     {
+        if (tilemap == null)
+        {
+            tilemap = GameObject.Find("BaseTilemap").GetComponent<Tilemap>();
+        }
+        if (tilemap == null)
+        {
+            return Vector3Int.zero;
+        }
+
         Vector3 worldPosition;
         if (mousePosition)
         {
@@ -26,6 +35,15 @@ public class TileMapReadController : MonoBehaviour
 
     public TileBase GetTileBase(Vector3Int gridPosition)
     {
+        if (tilemap == null)
+        {
+            tilemap = GameObject.Find("BaseTilemap").GetComponent<Tilemap>();
+        }
+        if (tilemap == null)
+        {
+            return null;
+        }
+
         return tilemap.GetTile(gridPosition);
     }
 }

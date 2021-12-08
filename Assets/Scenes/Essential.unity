@@ -23719,7 +23719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3058e26ed56c8409c38d5402835239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 256576052}
+  tilemap: {fileID: 0}
   cropsManager: {fileID: 1442345670043365357}
 --- !u!1 &8131199264582770825
 GameObject:
