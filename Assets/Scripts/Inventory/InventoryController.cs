@@ -5,6 +5,7 @@ using UnityEngine;
 public class InventoryController : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject topPanel;
     public GameObject toolbarPanel;
 
     public void Update()
@@ -13,6 +14,7 @@ public class InventoryController : MonoBehaviour
         {
             panel.SetActive(!panel.activeInHierarchy);
             toolbarPanel.SetActive(!toolbarPanel.activeInHierarchy);
+            topPanel.SetActive(!topPanel.activeInHierarchy);
         }
     }
 }

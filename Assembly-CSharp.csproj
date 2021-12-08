@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Inventory\GameItemContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\InventoryItem.cs" />
+     <Compile Include="Assets\Scripts\PanelGroup.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\NavigateButton.cs" />
      <Compile Include="Assets\Scripts\GameSceneManager.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\AnimationManager.cs" />
@@ -85,6 +86,7 @@
      <Compile Include="Assets\Scripts\Character\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlowTile.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Springs\ScaleSpring.cs" />
+     <Compile Include="Assets\Scripts\CraftingRecipe.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterEquipment.cs" />
      <Compile Include="Assets\Scripts\ItemSpawnManager.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryPanel.cs" />
@@ -92,6 +94,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\SoloState.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterInteractionController.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\IconCollection.cs" />
+     <Compile Include="Assets\Scripts\Crafting.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterControls.cs" />
      <Compile Include="Assets\Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemWorkspace.cs" />
@@ -133,6 +136,7 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Modifier.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\EditorScripts\CaptureOptions.cs" />
+     <Compile Include="Assets\Scripts\RecipePanel.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryButton.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileImage.cs" />
      <Compile Include="Assets\Scripts\Inventory\ToolbarController.cs" />
@@ -152,6 +156,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\StandaloneFilePicker.cs" />
      <Compile Include="Assets\Scripts\Inventory\GameItem.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemContainer.cs" />
+     <Compile Include="Assets\Scripts\RecipeList.cs" />
      <Compile Include="Assets\Scripts\DialogueContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

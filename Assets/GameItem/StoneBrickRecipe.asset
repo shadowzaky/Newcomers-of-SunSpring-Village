@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268987066cc406e47924a7af89981b6b, type: 3}
+  m_Name: StoneBrickRecipe
+  m_EditorClassIdentifier: 
+  elemets:
+  - item: {fileID: 11400000, guid: 324e35200a076864c9e2c137802478f5, type: 2}
+    count: 5
+  output:
+    item: {fileID: 11400000, guid: e8deb0330d68050469265fdd367e0973, type: 2}
+    count: 1
