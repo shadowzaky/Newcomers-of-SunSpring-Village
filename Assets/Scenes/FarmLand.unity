@@ -65774,6 +65774,7 @@ GameObject:
   - component: {fileID: 1653235186}
   - component: {fileID: 1653235188}
   - component: {fileID: 1653235187}
+  - component: {fileID: 1653235189}
   m_Layer: 0
   m_Name: Tilemap_Crops
   m_TagString: Untagged
@@ -65907,6 +65908,23 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1653235189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653235185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e558ebfcdb1ec13478c817c693d1eb09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plowed: {fileID: 11400000, guid: 726d29395f91fb244abde411fa520b8a, type: 2}
+  seeded: {fileID: 11400000, guid: d0106053483a7104e8489d0a2e153e7e, type: 2}
+  cropTilemap: {fileID: 1653235188}
+  cropsSpritePrefab: {fileID: 6672555834355984366, guid: 0fd9fe500efec894f9c50cdb3f78c797, type: 3}
+  cropsContainer: {fileID: 11400000, guid: 81b8bc53894838345ab2ff5f677f95f5, type: 2}
 --- !u!1 &1784514345
 GameObject:
   m_ObjectHideFlags: 0

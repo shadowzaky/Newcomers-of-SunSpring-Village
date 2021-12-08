@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+[Serializable]
 public class CropTile
 {
     public int growTimer;
@@ -31,112 +32,38 @@ public class CropTile
     }
 }
 
-public class CropsManager : TimeAgent
+public class CropsManager : MonoBehaviour
 {
-    public TileBase plowed;
-    public TileBase seeded;
-    public Tilemap cropTilemap;
-    Tilemap CropTilemap
+    public TilemapCropsManager cropsManager;
+
+    void ValidateCropsManagerInitialized()
     {
-        get
+        if (cropsManager == null)
         {
-            if (cropTilemap == null)
-            {
-                cropTilemap = GameObject.Find("Tilemap_Crops")?.GetComponent<Tilemap>();
-            }
-            return cropTilemap;
+            Debug.LogWarning("No tilemap crops manager");
         }
     }
-    public GameObject cropsSpritePrefab;
-
-    Dictionary<Vector3Int, CropTile> crops;
-
-    void Start()
+    public void PickUp(Vector3Int position)
     {
-        Init();
-        crops = new Dictionary<Vector3Int, CropTile>();
-        onTimeTick += Tick;
-    }
-
-    public void Tick()
-    {
-        if (CropTilemap == null) { return; }
-
-        foreach (CropTile cropTile in crops.Values)
-        {
-            if (cropTile.crop != null)
-            {
-                cropTile.damage += 0.02f;
-                if (cropTile.damage > 1f)
-                {
-                    cropTile.Harvested();
-                }
-                else if (!cropTile.completed)
-                {
-                    cropTile.growTimer += 1;
-                    CropTilemap.SetTile(cropTile.position, plowed);
-                    if (cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growthStage])
-                    {
-                        cropTile.spriteRenderer.gameObject.SetActive(true);
-                        cropTile.spriteRenderer.sprite = cropTile.crop.sprites[cropTile.growthStage];
-                        cropTile.growthStage++;
-                    }
-                }
-            }
-        }
+        ValidateCropsManagerInitialized();
+        cropsManager?.PickUp(position);
     }
 
     public bool Check(Vector3Int position)
     {
-        if (CropTilemap == null) { return false; }
-        return crops.ContainsKey(position);
-    }
-
-    public void Plow(Vector3Int position)
-    {
-        if (crops.ContainsKey(position))
-        {
-            //crop already present
-            return;
-        }
-
-        CreatedPlowedTile(position);
-    }
-
-    private void CreatedPlowedTile(Vector3Int position)
-    {
-        if (CropTilemap == null) { return; }
-        CropTile crop = new CropTile();
-        crop.position = position;
-        crops.Add(position, crop);
-
-        GameObject go = Instantiate(cropsSpritePrefab);
-        go.transform.position = CropTilemap.GetCellCenterLocal(position);
-        go.transform.position -= Vector3.forward * 0.01f;
-        go.SetActive(false);
-        crop.spriteRenderer = go.GetComponent<SpriteRenderer>();
-
-        CropTilemap.SetTile(position, plowed);
+        ValidateCropsManagerInitialized();
+        return cropsManager?.Check(position) ?? false;
     }
 
     public void Seed(Vector3Int position, Crop toSeed)
     {
-        if (CropTilemap == null) { return; }
-        CropTilemap.SetTile(position, seeded);
-
-        crops[position].crop = toSeed;
+        ValidateCropsManagerInitialized();
+        cropsManager?.Seed(position, toSeed);
     }
 
-    public void PickUp(Vector3Int gridPosition)
+    public void Plow(Vector3Int position)
     {
-        if (crops.ContainsKey(gridPosition) == false || CropTilemap == null) { return; }
-
-        CropTile cropTile = crops[gridPosition];
-        if (cropTile.completed)
-        {
-            ItemSpawnManager.instance.SpawnItem(CropTilemap.GetCellCenterLocal(gridPosition), cropTile.crop.yield, cropTile.crop.quantity);
-
-            cropTile.Harvested();
-        }
+        ValidateCropsManagerInitialized();
+        cropsManager?.Plow(position);
     }
 }

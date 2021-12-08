@@ -52,6 +52,7 @@
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileTextMultiple.cs" />
      <Compile Include="Assets\Scripts\TimeAgent.cs" />
+     <Compile Include="Assets\Scripts\TilemapCropsManager.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\ItemParams.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\IStandaloneFileBrowser.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ElementId.cs" />
@@ -131,6 +132,7 @@
      <Compile Include="Assets\Scripts\Inventory\InventoryController.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowser.cs" />
      <Compile Include="Assets\Scripts\Character\PickUpItem.cs" />
+     <Compile Include="Assets\Scripts\CropsContainer.cs" />
      <Compile Include="Assets\Scripts\TransitionArea.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemToolbarPanel.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\Modifier.cs" />
