@@ -8,11 +8,11 @@ public class TilemapCropsManager : TimeAgent
 {
     public TileBase plowed;
     public TileBase seeded;
-    
+
     public Tilemap cropTilemap;
 
     public GameObject cropsSpritePrefab;
-    
+
     public CropsContainer cropsContainer;
 
     void Start()
@@ -21,6 +21,23 @@ public class TilemapCropsManager : TimeAgent
         cropTilemap = GetComponent<Tilemap>();
         Init();
         onTimeTick += Tick;
+        VisualizeMap();
+    }
+
+    void VisualizeMap()
+    {
+        for (int i = 0; i < cropsContainer.crops.Count; i++)
+        {
+            VisualizeTile(cropsContainer.crops[i]);
+        }
+    }
+
+    void OnDestroy()
+    {
+        for (int i = 0; i < cropsContainer.crops.Count; i++)
+        {
+            cropsContainer.crops[i].spriteRenderer = null;
+        }
     }
 
     public void Tick()
@@ -58,6 +75,7 @@ public class TilemapCropsManager : TimeAgent
 
     public void Plow(Vector3Int position)
     {
+        if (Check(position)) { return; }
         CreatedPlowedTile(position);
     }
 
@@ -67,12 +85,7 @@ public class TilemapCropsManager : TimeAgent
         crop.position = position;
         cropsContainer.Add(crop);
 
-        GameObject go = Instantiate(cropsSpritePrefab);
-        go.transform.position = cropTilemap.GetCellCenterLocal(position);
-        go.transform.position -= Vector3.forward * 0.01f;
-        go.SetActive(false);
-        crop.spriteRenderer = go.GetComponent<SpriteRenderer>();
-
+        VisualizeTile(crop);
         cropTilemap.SetTile(position, plowed);
     }
 
@@ -83,7 +96,7 @@ public class TilemapCropsManager : TimeAgent
         {
             cropTilemap.SetTile(position, seeded);
             tile.crop = toSeed;
-        }        
+        }
     }
 
     public void PickUp(Vector3Int gridPosition)
@@ -94,6 +107,28 @@ public class TilemapCropsManager : TimeAgent
             ItemSpawnManager.instance.SpawnItem(cropTilemap.GetCellCenterLocal(gridPosition), tile.crop.yield, tile.crop.quantity);
 
             tile.Harvested();
+            VisualizeTile(tile);
+        }
+    }
+
+    public void VisualizeTile(CropTile cropTile)
+    {
+        cropTilemap.SetTile(cropTile.position, cropTile.crop != null ? seeded : plowed);
+
+        if (cropTile.spriteRenderer == null)
+        {
+            GameObject go = Instantiate(cropsSpritePrefab, transform);
+            go.transform.position = cropTilemap.GetCellCenterLocal(cropTile.position);
+            go.transform.position -= Vector3.forward * 0.01f;
+            cropTile.spriteRenderer = go.GetComponent<SpriteRenderer>();
+        }
+
+        bool growing = cropTile.crop != null && cropTile.growTimer >= cropTile.crop.growthStageTime[0];
+
+        cropTile.spriteRenderer.gameObject.SetActive(growing);
+        if (growing)
+        {
+            cropTile.spriteRenderer.sprite = cropTile.crop.sprites[cropTile.growthStage - 1];
         }
     }
 }
