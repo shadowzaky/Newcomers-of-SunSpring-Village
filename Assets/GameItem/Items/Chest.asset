@@ -16,7 +16,8 @@ MonoBehaviour:
   stackable: 1
   icon: {fileID: 21300000, guid: 695013b906eb2c14da491743fb816670, type: 3}
   onAction: {fileID: 0}
-  onTileMapAction: {fileID: 0}
-  onItemUsed: {fileID: 0}
+  onTileMapAction: {fileID: 11400000, guid: 24069dd934707b24cbb08df4b1da7e29, type: 2}
+  onItemUsed: {fileID: 11400000, guid: 24069dd934707b24cbb08df4b1da7e29, type: 2}
   crop: {fileID: 0}
   itemHighlight: 1
+  itemPrefab: {fileID: 3046106652029209193, guid: 1540010c7c59bee479e298a37045165e, type: 3}

@@ -94,7 +94,10 @@ public class ToolsCharacterController : MonoBehaviour
                 }
 
                 bool completed = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController, item);
-                HandleActionPerformed(completed, item);
+                if (completed)
+                {
+                    HandleActionPerformed(completed, item);
+                }                
             }
         }
     }

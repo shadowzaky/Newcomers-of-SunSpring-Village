@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d98d605b1086804aa65b275293cd5f6, type: 3}
   m_Name: FarmLandPlaceableObjectsContainer
   m_EditorClassIdentifier: 
-  placeableObjects: []
+  placeableObjects:
+  - placedItem: {fileID: 11400000, guid: b6092e1cdf0144e45a29bdc4048ed3eb, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -2, y: 0, z: 0}

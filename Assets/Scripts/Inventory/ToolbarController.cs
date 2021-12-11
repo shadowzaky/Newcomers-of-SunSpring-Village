@@ -62,7 +62,7 @@ public class ToolbarController : MonoBehaviour
         selectedTool = id;
     }
 
-    void UpdateHighlightItem(int id)
+    public void UpdateHighlightItem(int id = 0)
     {
         GameItem item = GetItem;
         if (item == null) {

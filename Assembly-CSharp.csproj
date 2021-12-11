@@ -76,11 +76,13 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemType.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\CharacterState.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\StateHandler.cs" />
+     <Compile Include="Assets\Scripts\ItemContainerInteractController.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\CharacterInventorySetup.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\ColorMode.cs" />
      <Compile Include="Assets\Scripts\Tools\ToolAction.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\Character.cs" />
      <Compile Include="Assets\Scripts\Tilemap\TilemapMarkerManager.cs" />
+     <Compile Include="Assets\Scripts\PlaceableObjectsContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemSlot.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileImage.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ScrollInventory.cs" />
@@ -90,6 +92,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\Springs\ScaleSpring.cs" />
      <Compile Include="Assets\Scripts\CraftingRecipe.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterEquipment.cs" />
+     <Compile Include="Assets\Scripts\PlaceableObjectsReferenceManager.cs" />
      <Compile Include="Assets\Scripts\ItemSpawnManager.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryPanel.cs" />
      <Compile Include="Assets\Scripts\Interactable\Interactable.cs" />
@@ -98,6 +101,7 @@
      <Compile Include="Assets\Scripts\Character\CharacterInteractionController.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CommonScripts\IconCollection.cs" />
      <Compile Include="Assets\Scripts\Crafting.cs" />
+     <Compile Include="Assets\Scripts\PlaceableObjectsManager.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\ExampleScripts\CharacterControls.cs" />
      <Compile Include="Assets\Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\ItemWorkspace.cs" />
@@ -133,6 +137,7 @@
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Data\LocalizedValue.cs" />
      <Compile Include="Assets\Scripts\Interactable\TalkInteractable.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryController.cs" />
+     <Compile Include="Assets\Scripts\ItemContainerPanel.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowser.cs" />
      <Compile Include="Assets\Scripts\Character\PickUpItem.cs" />
      <Compile Include="Assets\Scripts\CropsContainer.cs" />
@@ -154,6 +159,7 @@
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\PaletteGradient.cs" />
      <Compile Include="Assets\Scripts\Actor.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\ShopBase.cs" />
+     <Compile Include="Assets\Scripts\PlaceObject.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\PropertyId.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\SimpleColorPicker\Scripts\RainbowGenerator.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -164,12 +170,6 @@
      <Compile Include="Assets\Scripts\RecipeList.cs" />
      <Compile Include="Assets\Scripts\DialogueContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\PlaceableObjectsManager.cs" />
-     <Compile Include="Assets\Scripts\PlaceableObjectsContainer.cs" />
-     <Compile Include="Assets\Scripts\PlaceObject.cs" />
-     <Compile Include="Assets\Scripts\PlaceableObjectsReferenceManager.cs" />
-     <Compile Include="Assets\Scripts\ItemContainerPanel.cs" />
-     <Compile Include="Assets\Scripts\ItemContainerInteractController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
