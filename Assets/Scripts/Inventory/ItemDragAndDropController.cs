@@ -37,7 +37,7 @@ public class ItemDragAndDropController : MonoBehaviour
 
     private Vector2 GetMousePosition()
     {
-        return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        return Input.mousePosition;
     }
 
     private void MoveDragIconWithMouse()

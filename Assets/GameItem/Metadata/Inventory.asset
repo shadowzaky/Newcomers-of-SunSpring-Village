@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d524f8a255725242b677321ccf5f968, type: 3}
+  m_Name: Inventory
+  m_EditorClassIdentifier: 
+  slots:
+  - item: {fileID: 11400000, guid: 761d9c97c5576034eae0bb2bce6fa75a, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 4b82f6e5d61074d43b34711007ab1c30, type: 2}
+    count: 85
+  - item: {fileID: 11400000, guid: 324e35200a076864c9e2c137802478f5, type: 2}
+    count: 20
+  - item: {fileID: 11400000, guid: 27dcc05358efb1742b12f29a2b797d56, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 699655ce8cc98814690703b2540d6c0e, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 0c1d5b736dad4b84892e5b6af6641f76, type: 2}
+    count: 892
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0

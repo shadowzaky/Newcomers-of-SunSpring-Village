@@ -15,6 +15,7 @@ public class ToolsCharacterController : MonoBehaviour
     public float maxDistance = 2.5f;
     public ToolbarController toolbarController;
     public ToolAction onTilePickUp;
+    public ItemHighlight itemHighlight;
 
     Character4D character;
     Rigidbody2D body2d;
@@ -53,11 +54,13 @@ public class ToolsCharacterController : MonoBehaviour
         Vector2 cameraPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         selectable = Vector2.Distance(characterPosition, cameraPosition) < maxDistance;
         markerManager.Show(selectable);
+        itemHighlight.CanSelect = selectable;
     }
 
     private void MarkTile()
     {
         markerManager.markedCellPosition = selectedTilePosition;
+        itemHighlight.cellPosition = selectedTilePosition;
     }
 
     private bool UseToolWorld()

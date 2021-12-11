@@ -7,6 +7,8 @@ public class LootContainerInteract : Interactable
     public Sprite openSprite;
     public Sprite closedSprite;
     public bool opened;
+    public AudioClip onOpenAudio;
+    public AudioClip onCloseAudio;
 
     SpriteRenderer spriteRenderer;
 
@@ -19,5 +21,7 @@ public class LootContainerInteract : Interactable
     {
         opened = !opened;
         spriteRenderer.sprite = opened ? openSprite : closedSprite;
+        AudioManager.instance.Play(opened ? onOpenAudio : onCloseAudio);
+
     }
 }

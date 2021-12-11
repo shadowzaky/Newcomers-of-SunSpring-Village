@@ -10,6 +10,7 @@ public class ToolbarController : MonoBehaviour
     int selectedTool = 0;
 
     public Action<int> onChange;
+    public ItemHighlight itemHighlight;
 
     public GameItem GetItem
     {
@@ -17,6 +18,12 @@ public class ToolbarController : MonoBehaviour
         {
             return GetItemAtIndex(selectedTool);
         }
+    }
+
+    void Start()
+    {
+        onChange += UpdateHighlightItem;
+        UpdateHighlightItem(selectedTool);
     }
 
     private GameItem GetItemAtIndex(int index)
@@ -53,5 +60,19 @@ public class ToolbarController : MonoBehaviour
     internal void Set(int id)
     {
         selectedTool = id;
+    }
+
+    void UpdateHighlightItem(int id)
+    {
+        GameItem item = GetItem;
+        if (item == null) {
+            itemHighlight.Show = false;
+            return;
+        }
+        itemHighlight.Show = item.itemHighlight;
+        if (item.itemHighlight)
+        {
+            itemHighlight.Set(item.icon);
+        }
     }
 }
