@@ -168,6 +168,8 @@
      <Compile Include="Assets\Scripts\PlaceableObjectsContainer.cs" />
      <Compile Include="Assets\Scripts\PlaceObject.cs" />
      <Compile Include="Assets\Scripts\PlaceableObjectsReferenceManager.cs" />
+     <Compile Include="Assets\Scripts\ItemContainerPanel.cs" />
+     <Compile Include="Assets\Scripts\ItemContainerInteractController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
