@@ -35,6 +35,24 @@ public class ItemDragAndDropController : MonoBehaviour
         }
     }
 
+    internal void RemoveItem(int count = 1)
+    {
+        if (itemSlot == null) { return; }
+        if (itemSlot.item.stackable)
+        {
+            itemSlot.count -= count;
+            if (itemSlot.count <= 0)
+            {
+                itemSlot.Clear();
+            }
+        }
+        else
+        {
+            itemSlot.Clear();
+        }
+        UpdateIcon();
+    }
+
     private Vector2 GetMousePosition()
     {
         return Input.mousePosition;
@@ -55,11 +73,19 @@ public class ItemDragAndDropController : MonoBehaviour
         }
         else
         {
-            GameItem item = itemSlot.item;
-            int count = itemSlot.count;
+            if (itemSlot.item == this.itemSlot.item)
+            {
+                itemSlot.count += this.itemSlot.count;
+                this.itemSlot.Clear();
+            }
+            else
+            {
+                GameItem item = itemSlot.item;
+                int count = itemSlot.count;
 
-            itemSlot.Copy(this.itemSlot);
-            this.itemSlot.Set(item, count);
+                itemSlot.Copy(this.itemSlot);
+                this.itemSlot.Set(item, count);
+            }
         }
         UpdateIcon();
     }
@@ -75,5 +101,15 @@ public class ItemDragAndDropController : MonoBehaviour
             dragItemIcon.SetActive(true);
             dragItemIcon.GetComponent<Image>().sprite = itemSlot.item.icon;
         }
+    }
+
+    public bool Check(GameItem item, int count = 1)
+    {
+        if (itemSlot == null) { return false; }
+        if (item.stackable)
+        {
+            return itemSlot.item == item && itemSlot.count >= count;
+        }
+        return itemSlot.item == item;
     }
 }
