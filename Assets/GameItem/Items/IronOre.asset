@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebaa3860cf4b5ad4ba3989d78440f842, type: 3}
   m_Name: IronOre
   m_EditorClassIdentifier: 
-  Name: 
-  stackable: 0
-  icon: {fileID: 0}
+  Name: IronOre
+  stackable: 1
+  icon: {fileID: 21300000, guid: f4d66d4097065de4c89bf11be02f54cc, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}

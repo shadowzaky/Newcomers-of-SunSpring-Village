@@ -149,6 +149,7 @@
      <Compile Include="Assets\Scripts\RecipePanel.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryButton.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileImage.cs" />
+     <Compile Include="Assets\Scripts\ItemConvertorInteract.cs" />
      <Compile Include="Assets\Scripts\Inventory\ToolbarController.cs" />
      <Compile Include="Assets\Scripts\CropsManager.cs" />
      <Compile Include="Assets\Scripts\TilePickUpAction.cs" />
@@ -170,7 +171,6 @@
      <Compile Include="Assets\Scripts\RecipeList.cs" />
      <Compile Include="Assets\Scripts\DialogueContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\ItemConvertorInteract.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />

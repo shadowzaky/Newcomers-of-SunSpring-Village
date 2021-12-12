@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebaa3860cf4b5ad4ba3989d78440f842, type: 3}
   m_Name: Smelter
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Smelter
   stackable: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 9d7586c070884e34f9c303052f955b7d, type: 3}
   onAction: {fileID: 0}
-  onTileMapAction: {fileID: 0}
-  onItemUsed: {fileID: 0}
+  onTileMapAction: {fileID: 11400000, guid: 24069dd934707b24cbb08df4b1da7e29, type: 2}
+  onItemUsed: {fileID: 11400000, guid: 24069dd934707b24cbb08df4b1da7e29, type: 2}
   crop: {fileID: 0}
-  itemHighlight: 0
-  itemPrefab: {fileID: 0}
+  itemHighlight: 1
+  itemPrefab: {fileID: 227552810651793534, guid: c37031351b0c5da4092847d3c9e062a3, type: 3}
