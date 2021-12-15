@@ -19,6 +19,16 @@ public class PlaceableObjectsManager : MonoBehaviour
     {
         for (int i = 0; i < placeableObjectsContainer.placeableObjects.Count; i++)
         {
+            PlaceableObject placeableObject = placeableObjectsContainer.placeableObjects[i];
+            if (placeableObject.targetObject == null) { continue; }
+
+            IPersistant persistant = placeableObject.targetObject.GetComponent<IPersistant>();
+            if (persistant != null)
+            {
+                string jsonString = persistant.Read();
+                placeableObject.objectState = jsonString;
+            }
+
             placeableObjectsContainer.placeableObjects[i].targetObject = null;
         }
     }
@@ -47,9 +57,18 @@ public class PlaceableObjectsManager : MonoBehaviour
     void VisualizeItem(PlaceableObject placeableObject)
     {
         GameObject go = Instantiate(placeableObject.placedItem.itemPrefab);
+        go.transform.parent = transform;
+
         Vector3 position = targetTilemap.GetCellCenterWorld(placeableObject.positionOnGrid);
         position -= Vector3.forward * 0.1f;
         go.transform.position = position;
+
+        IPersistant persistant = go.GetComponent<IPersistant>();
+        if (persistant != null)
+        {
+            persistant.Load(placeableObject.objectState);
+        }
+
         placeableObject.targetObject = go.transform;
     }
 

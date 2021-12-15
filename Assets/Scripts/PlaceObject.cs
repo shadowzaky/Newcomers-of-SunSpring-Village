@@ -14,7 +14,6 @@ public class PlaceObject : ToolAction
 
     public override void OnItemUsed(GameItem usedItem, GameItemContainer inventory)
     {
-        Debug.Log("MATT got here");
         inventory.Remove(usedItem);
     }
 }

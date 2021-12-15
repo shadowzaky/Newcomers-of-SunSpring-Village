@@ -1,8 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemConvertorInteract : Interactable
+[Serializable]
+public class ItemConvertorData
+{
+    public ItemSlot itemSlot;
+    public float timer;
+
+    public ItemConvertorData()
+    {
+        itemSlot = new ItemSlot();
+    }
+}
+
+public class ItemConvertorInteract : Interactable, IPersistant
 {
     public SpriteRenderer spriteRenderer;
     public Sprite itemProcessingActiveSprite;
@@ -11,26 +24,28 @@ public class ItemConvertorInteract : Interactable
     public GameItem producedItem;
     public int producedItemCount = 1;
 
-    ItemSlot itemSlot;
-    Animator animator;
-
     public float timeToProcess = 5f;
-    float timer;
+
+    ItemConvertorData data;
+    Animator animator;
 
     void Start()
     {
-        itemSlot = new ItemSlot();
+        if (data == null)
+        {
+            data = new ItemConvertorData();
+        }
         animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (itemSlot == null) { return; }
+        if (data.itemSlot == null) { return; }
 
-        if (timer > 0f)
+        if (data.timer > 0f)
         {
-            timer -= Time.deltaTime;
-            if (timer <= 0f)
+            data.timer -= Time.deltaTime;
+            if (data.timer <= 0f)
             {
                 CompleteItemConversion();
             }
@@ -39,15 +54,15 @@ public class ItemConvertorInteract : Interactable
 
     void CompleteItemConversion()
     {
-        itemSlot.Clear();
-        itemSlot.Set(producedItem, producedItemCount);
+        data.itemSlot.Clear();
+        data.itemSlot.Set(producedItem, producedItemCount);
         spriteRenderer.sprite = itemProcessingIdleSprite;
         animator.SetBool("Working", false);
     }
 
     public override void Interact()
     {
-        if (itemSlot.item == null)
+        if (data.itemSlot.item == null)
         {
             if (GameManager.instance.dragAndDropController.Check(convertableItem))
             {
@@ -55,22 +70,31 @@ public class ItemConvertorInteract : Interactable
             }
         }
 
-        if (itemSlot.item != null && timer < 0f)
+        if (data.itemSlot.item != null && data.timer < 0f)
         {
-            GameManager.instance.inventoryContainer.Add(itemSlot.item, itemSlot.count);
-            itemSlot.Clear();
+            GameManager.instance.inventoryContainer.Add(data.itemSlot.item, data.itemSlot.count);
+            data.itemSlot.Clear();
         }
     }
 
     void StartItemProcessing()
     {
-        itemSlot.Copy(GameManager.instance.dragAndDropController.itemSlot);
+        data.itemSlot.Copy(GameManager.instance.dragAndDropController.itemSlot);
+        data.itemSlot.count = 1;
         GameManager.instance.dragAndDropController.RemoveItem();
 
-        timer = timeToProcess;
+        data.timer = timeToProcess;
         spriteRenderer.sprite = itemProcessingActiveSprite;
         animator.SetBool("Working", true);
     }
 
+    public string Read()
+    {
+        return JsonUtility.ToJson(data);
+    }
 
+    public void Load(string jsonString)
+    {
+        data = JsonUtility.FromJson<ItemConvertorData>(jsonString);
+    }
 }
