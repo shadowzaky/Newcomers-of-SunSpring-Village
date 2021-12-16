@@ -57,6 +57,7 @@
      <Compile Include="Assets\StandaloneFileBrowser\IStandaloneFileBrowser.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ElementId.cs" />
      <Compile Include="Assets\Scripts\CameraConfiner.cs" />
+     <Compile Include="Assets\Scripts\IPersistant.cs" />
      <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileText.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Interface\Elements\Equipment.cs" />
      <Compile Include="Assets\HeroEditor4D\FantasyInventory\Scripts\Enums\ItemMaterial.cs" />
@@ -171,7 +172,6 @@
      <Compile Include="Assets\Scripts\RecipeList.cs" />
      <Compile Include="Assets\Scripts\DialogueContainer.cs" />
      <Compile Include="Assets\HeroEditor4D\Common\CharacterScripts\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\iPersistant.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HeroEditor4D\Common\Shaders\GrayPaint.shader" />
@@ -465,11 +465,11 @@
     <Reference Include="clipper_library">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.cinemachine@2.8.2\Runtime\ThirdParty\clipper_library.dll</HintPath>
     </Reference>
-    <Reference Include="System.Windows.Forms">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\StandaloneFileBrowser\Plugins\System.Windows.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\StandaloneFileBrowser\Plugins\System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.6f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -998,9 +998,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

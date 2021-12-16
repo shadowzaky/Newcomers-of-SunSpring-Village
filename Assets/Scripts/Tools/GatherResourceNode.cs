@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using Assets.HeroEditor4D.Common.CharacterScripts;
 using HeroEditor4D.Common.Enums;
 using UnityEngine;
 
@@ -26,7 +24,7 @@ public class GatherResourceNode : ToolAction
             if (hit != null && hit.CanBeHit(canHitNodesOfType))
             {
                 hit.Hit();
-                
+
                 return true;
             }
         }
@@ -39,12 +37,12 @@ public class GatherResourceNode : ToolAction
         if (selected)
         {
             EquipWeapon(gameItem);
-        } 
-        else 
+        }
+        else
         {
             UnequipWeapon();
         }
-        
+
     }
 
     public void EquipWeapon(GameItem gameItem)

@@ -20,6 +20,14 @@ public class ToolbarController : MonoBehaviour
         }
     }
 
+    public ItemSlot GetItemSlot
+    {
+        get
+        {
+            return GameManager.instance.inventoryContainer.slots[selectedTool];
+        }
+    }
+
     void Start()
     {
         onChange += UpdateHighlightItem;

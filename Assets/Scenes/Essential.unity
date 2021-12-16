@@ -9390,7 +9390,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9512,7 +9512,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10457,7 +10457,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13229,7 +13229,7 @@ MonoBehaviour:
   EarringsRenderers:
   - {fileID: 7855730081565786303}
   - {fileID: 7445330264939906319}
-  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 3}
   EyesPaintMaterial: {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
   EquipmentPaintMaterial: {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
   WeaponType: 1
@@ -15132,7 +15132,7 @@ MonoBehaviour:
   EarringsRenderers:
   - {fileID: 4911119050269983172}
   - {fileID: 6177346894999835317}
-  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 3}
   EyesPaintMaterial: {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
   EquipmentPaintMaterial: {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
   WeaponType: 1
@@ -16577,7 +16577,7 @@ MonoBehaviour:
   EarringsRenderers:
   - {fileID: 1627631618085003483}
   - {fileID: 1887023267932579808}
-  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 3}
   EyesPaintMaterial: {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
   EquipmentPaintMaterial: {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
   WeaponType: 1
@@ -18422,7 +18422,7 @@ MonoBehaviour:
   EarringsRenderers:
   - {fileID: 6160895744129549980}
   - {fileID: 1027341462024221169}
-  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 3}
   EyesPaintMaterial: {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
   EquipmentPaintMaterial: {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
   WeaponType: 1
@@ -25198,6 +25198,7 @@ MonoBehaviour:
   panel: {fileID: 4029612219377565624}
   topPanel: {fileID: 927228867}
   toolbarPanel: {fileID: 2625949139281771130}
+  additionalPanel: {fileID: 1575478411}
 --- !u!114 &7130288589610761375
 MonoBehaviour:
   m_ObjectHideFlags: 0

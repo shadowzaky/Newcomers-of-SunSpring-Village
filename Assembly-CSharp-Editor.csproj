@@ -329,6 +329,9 @@
     <Reference Include="clipper_library">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.cinemachine@2.8.2\Runtime\ThirdParty\clipper_library.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms">
         <HintPath>F:\Workspace\unity\Newcomers of SunSpring Village\Assets\StandaloneFileBrowser\Plugins\System.Windows.Forms.dll</HintPath>
     </Reference>

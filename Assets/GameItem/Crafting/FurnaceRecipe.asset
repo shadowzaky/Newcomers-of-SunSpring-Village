@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268987066cc406e47924a7af89981b6b, type: 3}
   m_Name: FurnaceRecipe
   m_EditorClassIdentifier: 
-  elemets: []
+  elemets:
+  - item: {fileID: 11400000, guid: 324e35200a076864c9e2c137802478f5, type: 2}
+    count: 10
   output:
-    item: {fileID: 0}
-    count: 0
+    item: {fileID: 11400000, guid: a70864ccdfb67304f83f1008ddf84ed3, type: 2}
+    count: 1

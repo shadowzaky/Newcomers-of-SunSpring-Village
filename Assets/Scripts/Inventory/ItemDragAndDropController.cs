@@ -105,7 +105,7 @@ public class ItemDragAndDropController : MonoBehaviour
 
     public bool Check(GameItem item, int count = 1)
     {
-        if (itemSlot == null) { return false; }
+        if (itemSlot == null || itemSlot.item == null) { return false; }
         if (item.stackable)
         {
             return itemSlot.item == item && itemSlot.count >= count;

@@ -7,6 +7,7 @@ public class InventoryController : MonoBehaviour
     public GameObject panel;
     public GameObject topPanel;
     public GameObject toolbarPanel;
+    public GameObject additionalPanel;
 
     public void Update()
     {
@@ -28,5 +29,7 @@ public class InventoryController : MonoBehaviour
     {
         panel.SetActive(false);
         toolbarPanel.SetActive(true);
+        topPanel.SetActive(false);
+        additionalPanel.SetActive(false);
     }
 }
