@@ -28174,12 +28174,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1063387735810481}
-  character4D: {fileID: 114216052856340643}
+  character: {fileID: 7130288589610761377}
   inventoryContainer: {fileID: 11400000, guid: e07565f3f0aa63e4eafd7e4c7d4e7acc, type: 2}
   dragAndDropController: {fileID: 6273236123727027504}
   timeController: {fileID: 1195930164}
   dialogueSystem: {fileID: 9036878822076622385}
-  placeableObjects: {fileID: 0}
+  placeableObjects: {fileID: 8210906979680388304}
 --- !u!224 &6248344786182876034
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28575,6 +28575,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0a30b739fbac141ae9bdf6c9a66294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp:
+    currentValue: 0
+    maxValue: 0
+  stamina:
+    currentValue: 0
+    maxValue: 0
+  isDead: 0
+  isExhausted: 0
 --- !u!1001 &7335351566572097780
 PrefabInstance:
   m_ObjectHideFlags: 0
