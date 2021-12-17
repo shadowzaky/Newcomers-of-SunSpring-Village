@@ -37,7 +37,7 @@ public class GameSceneManager : MonoBehaviour
         Transform playerTransform = GameManager.instance.player.transform;
         CinemachineBrain currentCamera = Camera.main.GetComponent<CinemachineBrain>();
         currentCamera.ActiveVirtualCamera.OnTargetObjectWarped(playerTransform, targetPosition - playerTransform.position);
-        GameManager.instance.character4D.transform.position = targetPosition;
+        GameManager.instance.character.transform.position = targetPosition;
     }
 
     IEnumerator TintAndSwitchScene(string to, Vector3 targetPosition)

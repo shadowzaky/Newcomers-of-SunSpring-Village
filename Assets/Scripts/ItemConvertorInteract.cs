@@ -75,7 +75,7 @@ public class ItemConvertorInteract : Interactable, IPersistant
                 return;
             }
 
-            ToolbarController toolbarController = GameManager.instance.character4D.GetComponent<ToolbarController>();
+            ToolbarController toolbarController = GameManager.instance.character.GetComponent<ToolbarController>();
             if (toolbarController == null) { return; }
             ItemSlot itemSlot = toolbarController.GetItemSlot;
             if (itemSlot.item == convertableItem)
