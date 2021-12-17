@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameItem : ScriptableObject
 {
     public string Name;
+    public int id;
     public bool stackable;
     public Sprite icon;
     public ToolAction onAction;

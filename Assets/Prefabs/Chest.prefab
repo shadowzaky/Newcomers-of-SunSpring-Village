@@ -129,4 +129,4 @@ MonoBehaviour:
   opened: 0
   onOpenAudio: {fileID: 8300000, guid: 4b51e6640e7134d4d9492ce994aaf2ab, type: 3}
   onCloseAudio: {fileID: 8300000, guid: c03940e70b2e5244e8b9f8185031629e, type: 3}
-  itemContainer: {fileID: 11400000, guid: d48e83e8e30de0c43ac512737c165c6d, type: 2}
+  itemContainer: {fileID: 0}

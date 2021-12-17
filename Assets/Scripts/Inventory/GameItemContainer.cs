@@ -34,6 +34,15 @@ public class GameItemContainer : ScriptableObject
     public List<ItemSlot> slots;
     public bool isDirty = false;
 
+    internal void Init()
+    {
+        slots = new List<ItemSlot>();
+        for (int i = 0; i < 24; i++)
+        {
+            slots.Add(new ItemSlot());
+        }
+    }
+
     public void Add(GameItem item, int quantity = 1)
     {
         isDirty = true;
