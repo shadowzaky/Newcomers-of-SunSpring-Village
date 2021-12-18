@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: Hoe
   m_EditorClassIdentifier: 
   Name: Hoe
+  id: 2
   stackable: 0
   icon: {fileID: 21300000, guid: eb4f0e07266818f469f6d299b4a3a37d, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: 7313974242adcb4479e7545462da33b0, type: 2}
   onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
+  itemHighlight: 0
+  itemPrefab: {fileID: 0}

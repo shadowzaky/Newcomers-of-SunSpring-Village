@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Seeds
   m_EditorClassIdentifier: 
   Name: Seeds
+  id: 6
   stackable: 1
   icon: {fileID: 21300000, guid: 6247fb8a8e060e645acfc418adbd0490, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: c1612408a70f6bd4483cfe6b5cd69268, type: 2}
   onItemUsed: {fileID: 11400000, guid: c1612408a70f6bd4483cfe6b5cd69268, type: 2}
   crop: {fileID: 11400000, guid: 2cf94d009dec2334586f11ea8e94a235, type: 2}
+  itemHighlight: 0
+  itemPrefab: {fileID: 0}

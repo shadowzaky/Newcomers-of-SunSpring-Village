@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Tileset_Ground_2
+  m_Name: DirtInnerTopRight
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 7851500125361547508, guid: c80b46b73f3bcba4886531ae4c8cdd54, type: 3}
+  m_Sprite: {fileID: -6296274034798851926, guid: c80b46b73f3bcba4886531ae4c8cdd54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

@@ -111,7 +111,7 @@ public class LootContainerInteract : Interactable, IPersistant
 
     public void Load(string jsonString)
     {
-        if (jsonString == "" || jsonString == "{}") { return; }
+        if (jsonString == null || jsonString == "" || jsonString == "{}") { return; }
         Init();
         
         LootItemDataToSave toLoad = JsonUtility.FromJson<LootItemDataToSave>(jsonString);

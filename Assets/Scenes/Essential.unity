@@ -28412,6 +28412,7 @@ MonoBehaviour:
   timeController: {fileID: 1195930164}
   dialogueSystem: {fileID: 9036878822076622385}
   placeableObjects: {fileID: 8210906979680388304}
+  itemDB: {fileID: 11400000, guid: 0b48e0ba93ebebb479b143dcbcdf3c9e, type: 2}
 --- !u!1001 &5621699156151239377
 PrefabInstance:
   m_ObjectHideFlags: 0

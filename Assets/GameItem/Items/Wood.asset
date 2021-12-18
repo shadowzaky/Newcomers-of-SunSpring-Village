@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: Wood
   m_EditorClassIdentifier: 
   Name: Wood
+  id: 11
   stackable: 1
   icon: {fileID: 21300000, guid: 807a7cbff53c6e84290813782dd7f3e5, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
+  itemHighlight: 0
+  itemPrefab: {fileID: 0}

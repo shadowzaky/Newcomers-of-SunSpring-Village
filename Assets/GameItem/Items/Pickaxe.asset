@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Pickaxe
   m_EditorClassIdentifier: 
   Name: Pickaxe
+  id: 5
   stackable: 0
   icon: {fileID: 21300000, guid: acb0d33c64486c8489a65f3b0b03cbc6, type: 3}
   onAction: {fileID: 11400000, guid: b0c8f7f084523b148975ba944c8360c6, type: 2}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
+  itemHighlight: 0
+  itemPrefab: {fileID: 0}
